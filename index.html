@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin:0;
+            padding:0;
+            background-color:lightblue;
+        }
+        header {
+            background-color:aqua;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a button {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+        nav a button:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            text-align: center;
+            color:blue;
+        }
+        h4{
+            text-align: center;
+        }
+        p{
+            text-align: left;
+            gap: 5px;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 60%;
+            margin: 0 auto;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="radio"],
+        input[type="checkbox"],
+        button[type="submit"]
+          {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+       
+        html {
+            scroll-behavior: smooth;
+        }
+        footer{
+            background-color: #222;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+    <h1>Welcome to My Portfolio</h1>
+    <link rel="stylesheet" href="style.css">
+        <nav>
+            <a href="#about"><button>About</button></a>
+            <a href="#skills"><button>Skills</button></a>
+            <a href="#project"><button>Projects</button></a>
+            <a href="#contact"><button>Contact</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Ramya Nambula</h1>
+            <img src="mypick.jpg" alt="image" width="400px" height="400px">
+            <p>I am passionate about <b>Web Development</b>,with a strong focus on <b>Front-End technologies</b>.
+                I am also an enthusiastic learner in the filed of <i>Artificial Intelligence and Machine Learning (AI/Ml)</i>.
+                Currently, I am pursuing a <b>B.Tech</b> in <b>Artificial Intelligence and Machine Learning</b> at Vijaya Institute of 
+                Technology for Women. I completed my <b>10th grade</b> at Sindu Niketan Adarsha Patasala, achieving a perfect 10.0 CGPA,
+                and pursued my <b>Intermediate education</b> at Sri Durga Malleswara Siddhartha Mahila Kalasala (SDMSMK) with a CGPA of
+                82.4. My current B.Tech CGPA is 8.39. I have consistently performed well in academics and have a keen interest
+                in programming and web technologies. My technical skills include <b>Python, HTML, CSS and JavaScript(JS)</b>. I am eager to 
+                deploy my skills and apply them in real-world projects, especially in areas where web development intersets with AI. </p>
+
+        </section>
+
+        <section id="skills">
+            <h1>My Skills</h1>
+            <ol>
+                <li>C</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS </li>
+                <li>JS Basics</li>
+                <li>Spreedsheet</li>
+                <li>Microsoft Office</li>
+                <li>DSA in Python(Basics)</li>
+            </ol>
+        </section>
+
+        <section id="project">
+            <h1>My Projects</h1>
+            <table border="1">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td> Personal Portfolio Website</td>
+                    <td>This project is a personal portfolio website that showcases my skills, projects, 
+                        about and contact details in a visually appealing way. It serves as a digital resume
+                         and helps create a strong online presence. The site is responsive, easy to navigate, 
+                         and built using basic web development technologies.</td>
+                </tr>
+                <tr>
+                    <td>Early Detection of Breast Cancer using Machine Learning(ML)</td>
+                    <td>This project focuses on developing a ML model to detect BreastCancer at an early stage 
+                        using diagnostic data. It uses classification algorithms to predict whether a tumor is 
+                        malignant or benign based on features like cell size, texture, and shape. Early detection 
+                        can significantly improve treatment success and survival rates.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <h4>Feel free to get in touch with me using the form below :</h4>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label>Choose your gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <label>Select your interest:</label>
+                <div>
+                  <input type="checkbox" id="coding" value="coding">
+                    <label for="coding">Coding</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="theory" value="theory">
+                    <label for="theory">Theory</label>
+                </div>
+                <label for="bio">Bio (up to 100 characters):(optional)</label>
+                <input type="text" id="bio" maxlength="200">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer style="text-align: center; padding: 20px;">
+        © 2025 My Portfolio 
+      </footer>
+      
+    <script>
+        // Form submission handler
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            if (name && email) {
+                alert("Thank you, " + name + "! Your message has been submitted.");
+                document.getElementById("contactForm").reset();
+            } else {
+                alert("Please fill out the required fields.");
+            }
+        });
+    </script>
+</body>
+</html>
